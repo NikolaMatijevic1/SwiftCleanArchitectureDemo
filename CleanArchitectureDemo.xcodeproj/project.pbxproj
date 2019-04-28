@@ -61,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				65B842652275F3B4006AEB81 /* Main */,
+				65B8427222760C0E006AEB81 /* Data Layer */,
+				65B8427122760BF3006AEB81 /* Domain Layer */,
 				65B842662275F3C0006AEB81 /* UI layer */,
 				65B842622275F26B006AEB81 /* SupportingFiles */,
 			);
@@ -111,6 +113,20 @@
 				65B8426D2276079F006AEB81 /* ResultViewController.xib */,
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		65B8427122760BF3006AEB81 /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		65B8427222760C0E006AEB81 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
