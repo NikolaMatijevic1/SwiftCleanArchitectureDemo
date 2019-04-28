@@ -13,6 +13,8 @@
 		65B8425B2275F1FD006AEB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B842592275F1FD006AEB81 /* LaunchScreen.storyboard */; };
 		65B842682275F467006AEB81 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B842672275F467006AEB81 /* SearchViewController.xib */; };
 		65B8426A2275F592006AEB81 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B842692275F592006AEB81 /* AppCoordinator.swift */; };
+		65B8426C22760771006AEB81 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8426B22760771006AEB81 /* ResultViewController.swift */; };
+		65B8426E2276079F006AEB81 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B8426D2276079F006AEB81 /* ResultViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		65B8425C2275F1FD006AEB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B842672275F467006AEB81 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		65B842692275F592006AEB81 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		65B8426B22760771006AEB81 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		65B8426D2276079F006AEB81 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +89,28 @@
 			isa = PBXGroup;
 			children = (
 				65B842692275F592006AEB81 /* AppCoordinator.swift */,
+				65B8426F227607AA006AEB81 /* Search */,
+				65B84270227607B4006AEB81 /* Result */,
+			);
+			path = "UI layer";
+			sourceTree = "<group>";
+		};
+		65B8426F227607AA006AEB81 /* Search */ = {
+			isa = PBXGroup;
+			children = (
 				65B842522275F1FC006AEB81 /* SearchViewController.swift */,
 				65B842672275F467006AEB81 /* SearchViewController.xib */,
 			);
-			path = "UI layer";
+			path = Search;
+			sourceTree = "<group>";
+		};
+		65B84270227607B4006AEB81 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				65B8426B22760771006AEB81 /* ResultViewController.swift */,
+				65B8426D2276079F006AEB81 /* ResultViewController.xib */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +174,7 @@
 				65B8425B2275F1FD006AEB81 /* LaunchScreen.storyboard in Resources */,
 				65B842582275F1FD006AEB81 /* Assets.xcassets in Resources */,
 				65B842682275F467006AEB81 /* SearchViewController.xib in Resources */,
+				65B8426E2276079F006AEB81 /* ResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +188,7 @@
 				65B8426A2275F592006AEB81 /* AppCoordinator.swift in Sources */,
 				65B842532275F1FC006AEB81 /* SearchViewController.swift in Sources */,
 				65B842512275F1FC006AEB81 /* AppDelegate.swift in Sources */,
+				65B8426C22760771006AEB81 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,15 @@ class AppCoordinator {
     func start() {
         let searchVC = SearchViewController()
         window.rootViewController = searchVC
+        searchVC.searchDelegate = self
+        window.makeKeyAndVisible()
+    }
+}
+
+extension AppCoordinator: SearchDelegate {
+    func userAskedForSearch(with term: String) {
+        let resultVC = ResultViewController()
+        window.rootViewController = resultVC
         window.makeKeyAndVisible()
     }
 }

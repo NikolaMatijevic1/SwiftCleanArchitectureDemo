@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="CleanArchitectureDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="errorLabel" destination="1Lz-ST-SVe" id="XJO-G7-wL8"/>
+                <outlet property="textField" destination="i3T-d1-71d" id="oEi-iX-Xkf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Scw-Qs-E47"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG1-N2-jwY">
+                    <rect key="frame" x="134.5" y="388.5" width="106" height="30"/>
+                    <state key="normal" title="Perform search"/>
+                    <connections>
+                        <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="aEN-Gz-ON4"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie title " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3T-d1-71d">
+                    <rect key="frame" x="25" y="308.5" width="325" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lz-ST-SVe">
+                    <rect key="frame" x="156.5" y="346" width="62" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.090672200516758394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Lz-ST-SVe" firstAttribute="top" secondItem="i3T-d1-71d" secondAttribute="bottom" constant="7.5" id="78h-SN-VUU"/>
+                <constraint firstItem="i3T-d1-71d" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="-50" id="Eoz-ql-gFF"/>
+                <constraint firstItem="1Lz-ST-SVe" firstAttribute="centerX" secondItem="i3T-d1-71d" secondAttribute="centerX" id="NrX-CM-veY"/>
+                <constraint firstItem="i3T-d1-71d" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="eOA-lT-acy"/>
+                <constraint firstItem="i3T-d1-71d" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-20" id="hqc-tB-aOC"/>
+                <constraint firstItem="bG1-N2-jwY" firstAttribute="centerX" secondItem="i3T-d1-71d" secondAttribute="centerX" id="wpT-jP-A0O"/>
+                <constraint firstItem="bG1-N2-jwY" firstAttribute="top" secondItem="i3T-d1-71d" secondAttribute="bottom" constant="50" id="xrp-Ng-iiC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
