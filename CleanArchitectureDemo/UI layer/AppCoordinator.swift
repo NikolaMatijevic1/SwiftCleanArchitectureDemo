@@ -11,9 +11,11 @@ import UIKit
 class AppCoordinator {
 
     let window: UIWindow
+    let dependencies: AppDependenciesContainer
 
-    init(window: UIWindow = UIWindow(frame: UIScreen.main.bounds)) {
+    init(window: UIWindow = UIWindow(frame: UIScreen.main.bounds), dependencies: AppDependenciesContainer) {
         self.window = window
+        self.dependencies = dependencies
     }
 
     func start() {
@@ -26,7 +28,7 @@ class AppCoordinator {
 
 extension AppCoordinator: SearchDelegate {
     func userAskedForSearch(with term: String) {
-        let resultVC = ResultViewController()
+        let resultVC = ResultViewController(searchTerm: term, dataSource: ResultVCDataSource(dependencies: dependencies))
         window.rootViewController = resultVC
         window.makeKeyAndVisible()
     }

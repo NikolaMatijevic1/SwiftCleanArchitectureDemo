@@ -17,7 +17,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func searchButtonTapped(_ sender: UIButton) {
-        guard let movieTerm = textField.text, movieTerm.count != 0 else {
+        guard let movieTerm = textField.text, !movieTerm.isEmpty else {
             errorLabel.isHidden = false
             errorLabel.text = "Morate unijeti tekst za pretragu"
             return
