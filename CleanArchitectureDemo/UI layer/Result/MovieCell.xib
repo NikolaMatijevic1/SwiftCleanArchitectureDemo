@@ -109,6 +109,7 @@
                 <outlet property="dateLabel" destination="OkM-5K-yKO" id="Zyi-vc-nV7"/>
                 <outlet property="descriptionLabel" destination="vR4-aq-my4" id="8kf-5E-ebT"/>
                 <outlet property="movieTitleLabel" destination="tAc-b6-ruf" id="lUS-Ev-lgl"/>
+                <outlet property="posterImageView" destination="unB-04-Lyf" id="7es-pc-ZXp"/>
                 <outlet property="ratingLabel" destination="jGX-Hn-MRp" id="I5P-x7-IJb"/>
             </connections>
             <point key="canvasLocation" x="-13.043478260869566" y="120.53571428571428"/>

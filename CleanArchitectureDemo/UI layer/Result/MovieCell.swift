@@ -14,6 +14,7 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     var posterPath: String?
+    @IBOutlet weak var posterImageView: UIImageView!
 
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
@@ -26,5 +27,6 @@ class MovieCell: UITableViewCell {
         super.prepareForReuse()
         self.posterPath = nil
         self.dateLabel.text = ""
+        self.posterImageView.image = nil
     }
 }

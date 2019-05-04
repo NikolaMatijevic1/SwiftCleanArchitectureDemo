@@ -47,8 +47,7 @@ extension ResultViewController: UITableViewDelegate {
 
 extension ResultViewController: DataSourceUpdateFeedback {
     func dataSourceUpdated() {
-        dataSource.fetchPosters(for: tableView.indexPathsForVisibleRows ?? [], in: tableView)
         tableView.reloadData()
-        tableView.layoutIfNeeded()
+        dataSource.fetchPosters(for: tableView.indexPathsForVisibleRows ?? [], in: tableView)
     }
 }

@@ -54,7 +54,8 @@ class ResultVCDataSource: NSObject {
 
     func updatePosters(with poster:Poster, in tableView: UITableView) {
         guard let cells = tableView.visibleCells as? [MovieCell], let cell = cells.first(where: { $0.posterPath == poster.path }), let image = UIImage(data: poster.image) else { return }
-            cell.imageView?.image = image
+            cell.posterImageView?.image = image
+
     }
 }
 
